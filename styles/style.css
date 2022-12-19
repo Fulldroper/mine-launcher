@@ -1,0 +1,200 @@
+/* .active {
+  background-color: #c36d6d !important;
+  animation: pulse-green 2s infinite;
+} */
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: var(--background-secondary);
+  background-position: center;
+}
+
+.topbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mover {
+  background-color: var(--background-tertiary);
+  font-family: "Pacifico";
+  margin-right: 15px;
+  width: 100%;
+  border-radius: 10px 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 24px;
+}
+
+.window-controler {
+  width: 85px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-tertiary);
+  border-radius: 0 10px 10px 10px;
+}
+
+.close,
+.tray {
+  cursor: pointer;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  margin: 3px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.close:hover,
+.tray:hover {
+  opacity: 0.7;
+}
+
+.close {
+  background-color: var(--color-red);
+}
+.tray {
+  background-color: var(--color-green);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 24px;
+}
+
+.center {
+  height: calc(100% - 107px);
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hotbar {
+  min-height: 100%;
+  min-width: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hotbar > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotbar > div > div {
+  background-color: var(--background-primary);
+  min-width: 60px;
+  min-height: 60px;
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-radius 0.5s ease-in-out;
+}
+
+.page {
+  background-color: var(--background-primary);
+  min-height: 100%;
+  min-width: calc(100% - 80px);
+  border-radius: 30px 0 0 30px;
+}
+
+.hotbar > div > div > svg,
+.hotbar > div > div > svg > path {
+  height: 30px;
+  width: 30px;
+  filter: drop-shadow(0 4 4 #00000040);
+}
+
+.hotbar > div > div:hover > svg {
+  fill: var(--header-primary);
+}
+
+.hotbar > div > div:hover {
+  border-radius: 20px;
+}
+
+.news > svg {
+  fill: var(--color-purple);
+}
+.news:hover,
+.news:hover > svg {
+  background-color: var(--color-purple);
+}
+
+.play > svg {
+  margin-left: 6px;
+  fill: var(--color-green);
+}
+.play:hover,
+.play:hover > svg {
+  background-color: var(--color-green);
+}
+
+.map > svg {
+  fill: var(--text-link);
+}
+.map:hover,
+.map:hover > svg {
+  background-color: var(--text-link);
+}
+
+.profile > svg {
+  fill: var(--color-green);
+}
+.profile:hover,
+.profile:hover > svg {
+  background-color: var(--color-green);
+}
+
+.settings > svg {
+  fill: var(--background-tertiary);
+}
+.settings:hover,
+.settings:hover > svg {
+  background-color: var(--background-tertiary);
+}
+
+.admin > svg {
+  fill: var(--color-red);
+  width: 40px !important;
+  height: 40px !important;
+}
+.admin:hover,
+.admin:hover > svg {
+  background-color: var(--color-red);
+}
+
+.page > div:empty {
+  background-image: url('../imgs/space.svg');
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.page > div:empty::before {
+  content: "На стадії розробки! ♥";
+  display: flex;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Calibri';
+  color: var(--text-muted);
+  font-size: 36;
+}

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "ComicNeue";
+  src: url("../fonts/ComicNeue.ttf");
+}
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/calibri-bold.ttf");
+}
+@font-face {
+  font-family: "Grunwald";
+  src: url("../fonts/Grunwald.ttf");
+}
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico.ttf");
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(193 193 193 / 70%);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(193 193 193 / 0%);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(193 193 193 / 0%);
+  }
+}
